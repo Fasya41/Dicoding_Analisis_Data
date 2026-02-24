@@ -133,6 +133,6 @@ Dashboard akan terbuka di browser secara otomatis.
 
 ## 👤 Author
 
-Nama: (Isi dengan nama Anda)  
+Nama: (faXyZa)  
 Project: Analisis Data E-Commerce  
 Tahun: 2026  
