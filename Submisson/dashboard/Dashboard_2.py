@@ -227,4 +227,5 @@ _, center, _ = st.columns([1, 6, 1])
 with center:
     fig, ax = plt.subplots(figsize=(8, 4))
     sns.barplot(data=segment_count, x="Segment", y="Jumlah Customer", ax=ax)
+
     st.pyplot(fig)
