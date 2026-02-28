@@ -216,7 +216,23 @@ with center:
     st.pyplot(fig)
 
 # =========================
-# 6️⃣ SEGMENTASI CUSTOMER (RFM)
+# 6️⃣ PAYMENT
+# =========================
+st.subheader("💳 Rata-rata Nilai Transaksi per Metode Pembayaran")
+
+fig, ax = plt.subplots(figsize=(8,5))
+sns.barplot(
+    data=payment_df,
+    x="payment_value",
+    y="payment_type",
+    ax=ax
+)
+ax.set_xlabel("Rata-rata Payment Value")
+ax.set_ylabel("Metode Pembayaran")
+st.pyplot(fig)
+
+# =========================
+# SEGMENTASI CUSTOMER (RFM)
 # =========================
 st.subheader("🔁 Segmentasi Customer berdasarkan RFM")
 
@@ -229,3 +245,4 @@ with center:
     sns.barplot(data=segment_count, x="Segment", y="Jumlah Customer", ax=ax)
 
     st.pyplot(fig)
+
