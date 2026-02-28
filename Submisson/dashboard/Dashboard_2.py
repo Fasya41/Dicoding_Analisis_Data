@@ -222,7 +222,7 @@ st.subheader("💳 Rata-rata Nilai Transaksi per Metode Pembayaran")
 
 fig, ax = plt.subplots(figsize=(8,5))
 sns.barplot(
-    data=payment_df,
+    data=all_df,
     x="payment_value",
     y="payment_type",
     ax=ax
@@ -245,4 +245,5 @@ with center:
     sns.barplot(data=segment_count, x="Segment", y="Jumlah Customer", ax=ax)
 
     st.pyplot(fig)
+
 
